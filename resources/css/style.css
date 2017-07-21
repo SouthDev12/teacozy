@@ -3,17 +3,13 @@ body {
   background-color: black;
   font-family: Helvetica;
   color: seashell;
-  opactiy: 0.9;
+  opacity: 0.9;
   text-align: center;
   font-size: 22px;
 }
 
-#alignment-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
+/* Header Section Styling */
 header {
   display: flex;
   align-items: center;
@@ -47,20 +43,22 @@ header nav a {
   padding-left: 30px;
 }
 
+
+/* High Level Styles for Body Section */
 main {
-  padding-top: 70px;
+  padding-top: 65px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 section {
-  padding-top: 65px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
-h2, h4 {
+h2, h4, h5 {
   margin: 0px;
   padding: 10px 0px 15px 0px;
 }
@@ -75,67 +73,33 @@ footer {
   text-align: left;
 }
 
-.first_container{
-  background-image: url("../images/img-mission-background.jpg");
-  margin: 0px auto 10px auto;
-  height: 700px;
+/*Class Stylings for Multiple Sections */
+.container {
   width: 1200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding-top: 50px;
+  margin: 0px auto 10px auto;
 }
 
 .content {
-  width: 1000px;
+  margin-top: 0px;
+  width: 1200px;
+  background-color: black;
   text-align: center;
+  margin-bottom: 50px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
 }
 
 .content img {
   height: 200px;
   width: 300px;
-}
-
-.locations {
-  width: 1200px;
-  height: 575px;
-  background-image: url("../images/img-locations-background.jpg");
-  padding-top: 50px;
-  z-index: 5;
-}
-
-.contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-#mission {
-  width: 1200px;
-  align-items: center;
-  background-color: black;
-}
-
-#row1 {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 0px;
-}
-
-#row2 {
-  display: flex;
-  justify-content: center;
-}
-
-#row2 div {
   padding: 10px 25px 0px 25px;
 }
 
-#location_row {
-  display: flex;
-  justify-content: center;
-}
-
-#location {
+.location {
   background-color: black;
   height: 300px;
   width: 300px;
@@ -144,4 +108,27 @@ footer {
   justify-content: space-around;
   margin: 15px 20px;
   opacity: 1;
+}
+
+/* Specialized ID Stylings for Individual Content */
+#mission-background{
+  background-image: url("../images/img-mission-background.jpg");
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+#location-background {
+  background-image: url("../images/img-locations-background.jpg");
+  height: 575px;
+  z-index: 5;
+}
+
+#contact {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
